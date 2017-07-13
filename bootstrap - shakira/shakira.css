@@ -1,0 +1,19 @@
+.btn-group{
+	margin-top:8px; 
+}
+#myModalLabel{
+	background-color: lightgreen;
+}
+.navbar-brand>img {
+    display: block;
+    width: 140px;
+    margin-top: -22px;
+}
+body {
+  position: relative;
+  
+}
+.item{
+	width: 800px;
+	margin: auto;
+}
