@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Container vs container-fluid</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="exercicio1.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<h2>.container</h2>
+	<div class="container">
+		<div class="row"><!--cria linha-->
+  		<div class="col-md-6"><!--nessa linha temos uma col de tamanho 6-->
+         
+          <img src="img/principal.jpg" class="img-responsive">
+        
+			</div>
+      <div class="col-md-6"><!--nessa linha temos outra col de tamanho 6-->
+        <div class="row"><!--LINHA 1:nessa col de tamanho 6 tem 1 linha-->
+          <div class="col-md-6"> <!--nessa linha temos uma col de tamanho 6 -->
+            <img src="img/principal.jpg" class="img-responsive">
+          </div>
+          <div class="col-md-6"> <!--nessa linha temos outra col de tamanho 6 <6 indica metade do donteiner>-->
+            <img src="img/principal1.jpg" class="img-responsive"> 
+          </div>
+        </div>  
+        <div class="row"><!--LINHA 2:nessa coluna temos uma outra linha -->
+          <div class="col-md-6"> <!--nessa linha temos uma col de tamanho 6 -->
+            <img src="img/principal.jpg" class="img-responsive">
+          </div>
+          <div class="col-md-6"> <!--nessa linha temos outra col de tamanho 6 <6 indica metade do donteiner>-->
+            <img src="img/principal1.jpg" class="img-responsive"> 
+          </div>
+          
+        </div>    
+      </div>
+	</div>
+	<hr>
+	<h2>.container-fluid</h2>
+	<div class="container-fluid">
+		<div class="row">
+  			<div class="col-xs-6">
+          			<div class="well"> 
+            				content
+          			</div>
+			</div>
+        		<div class="col-xs-6">
+          			<div class="well"> 
+            				content
+          			</div>
+			</div>
+    		</div>
+		<div class="row">
+  			<div class="col-md-4">
+          			<div class="well"> 
+            				content
+          			</div>
+			</div>
+        		<div class="col-md-4">
+          			<div class="well"> 
+            				content
+          			</div>
+			</div>
+      			<div class="col-md-4">
+          			<div class="well"> 
+            				content
+          			</div>
+			</div>
+    		</div>
+	</div>
+</body>
+</html>
